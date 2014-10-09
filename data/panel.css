@@ -1,0 +1,32 @@
+#tab-list {
+  width: 380px;
+}
+
+.tab {
+  border-left: 3px solid #FFF;
+  padding: 2px 5px;
+}
+
+.tab a {
+  display: inline-block;
+  white-space: nowrap;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab button {
+  vertical-align: top;
+}
+
+.tab.selected {
+  border-left: 3px solid #03F;
+}
+
+.tab.to-save {
+  background-color: #EFF;
+}
+
+.tab.to-remove {
+  background-color: #FEE;
+}
