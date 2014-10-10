@@ -4,7 +4,10 @@
 
 .tab {
   border-left: 3px solid #FFF;
-  padding: 2px 5px;
+  padding: 3px 5px;
+  margin-bottom: 2px;
+  border-radius: 0 3px 3px 0;
+  font-family: sans-serif;
 }
 
 .tab a {
@@ -15,9 +18,27 @@
   text-overflow: ellipsis;
   text-decoration: none;
   color: #000;
-  font-family: sans-serif;
   font-size: 0.8em;
   line-height: 1.5em;
+}
+
+.tab .save-button {
+  margin-right: 0.5em;
+}
+
+.tab .tags {
+  display: none;
+  margin-bottom: 3px;
+  font-size: 0.6em;
+}
+
+.tab .tags input {
+  border: 1px solid #999;
+  margin: 0 0 0 1em;
+}
+
+.tab .tags input:focus {
+  border: 1px solid #555;
 }
 
 .tab button {
@@ -29,7 +50,11 @@
 }
 
 .tab.to-save {
-  background-color: #EFF;
+  background-color: #DEF;
+}
+
+.tab.to-save .tags {
+  display: block;
 }
 
 .tab.to-remove {
