@@ -13,6 +13,10 @@ function select(tab) {
   getTabElement(tab).addClass("selected");
 }
 
+addon.port.on('showSnooze', function() {
+  $("#snooze").show();
+});
+
 addon.port.on('tab', function(tab) {
   var existing = getTabElement(tab);
   var el = $("<div></div>").attr("id", tabId(tab)).addClass('tab');
@@ -145,6 +149,16 @@ $("#done").on('click', function(e) {
   e.preventDefault();
 
   done();
+});
+
+$("#snooze .15m").on('click', function(e) {
+  e.preventDefault();
+  addon.port.emit('snooze', 15 * 60 * 1000);
+});
+
+$("#snooze .1h").on('click', function(e) {
+  e.preventDefault();
+  addon.port.emit('snooze', 60 * 60 * 1000);
 });
 
 addon.port.emit('ready');

@@ -64,3 +64,10 @@
 #done {
   margin-top: 1em;
 }
+
+#snooze {
+  display: none;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  margin: 1em 0;
+}
