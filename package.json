@@ -1,9 +1,58 @@
 {
   "name": "tabbers-anonymous",
-  "title": "tabbers-anonymous",
+  "title": "Tabbers Anonymous",
   "id": "jid1-3pgodAufAa3nIA",
-  "description": "a basic add-on",
-  "author": "",
+  "description": "Curing tab addiction by saving tabs to bookmarks",
+  "author": "Michael Nutt",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "version": "0.1",
+  "preferences": [
+    {
+      "description": "Automatically open at a set time every day",
+      "name": "autoOpen",
+      "title": "Automatically open",
+      "type": "bool",
+      "value": false
+    },
+    {
+      "description": "Time to automatically open",
+      "name": "autoOpenTime",
+      "title": "Open time",
+      "type": "menulist",
+      "value": 10,
+      "options": [
+        { "value": "0", "label": "12am" },
+        { "value": "1", "label": "1am" },
+        { "value": "2", "label": "2am" },
+        { "value": "3", "label": "3am" },
+        { "value": "4", "label": "4am" },
+        { "value": "5", "label": "5am" },
+        { "value": "6", "label": "6am" },
+        { "value": "7", "label": "7am" },
+        { "value": "8", "label": "8am" },
+        { "value": "9", "label": "9am" },
+        { "value": "10", "label": "10am" },
+        { "value": "11", "label": "11am" },
+        { "value": "12", "label": "12pm" },
+        { "value": "13", "label": "1pm" },
+        { "value": "14", "label": "2pm" },
+        { "value": "15", "label": "3pm" },
+        { "value": "16", "label": "4pm" },
+        { "value": "17", "label": "5pm" },
+        { "value": "18", "label": "6pm" },
+        { "value": "19", "label": "7pm" },
+        { "value": "20", "label": "8pm" },
+        { "value": "21", "label": "9pm" },
+        { "value": "22", "label": "10pm" },
+        { "value": "23", "label": "11pm" }
+      ]
+    },
+    {
+      "description": "Only automatically open if there are more than this many tabs",
+      "name": "maxTabs",
+      "title": "Max tab count",
+      "type": "integer",
+      "value": 10
+    }
+  ]
 }
